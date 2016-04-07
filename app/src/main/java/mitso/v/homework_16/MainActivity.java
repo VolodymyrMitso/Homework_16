@@ -259,7 +259,7 @@ public class MainActivity extends Activity implements IEventHandler {
             super.onPostExecute(aVoid);
 
             if (!cats.isEmpty()) {
-                mCatList.remove(mCatList.size() - 1);
+                mCatList.clear();
                 mCatList.addAll(cats);
                 mCatAdapter.notifyDataSetChanged();
             }
